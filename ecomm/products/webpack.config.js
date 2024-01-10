@@ -16,7 +16,13 @@ module.exports={
             // expose defines which files or modules to be exposes to other projects
             exposes:{
                 './ProductsIndex':'./src/index'
-            }
+            },
+            // shared:{
+            //     faker:{
+            //         singleton:true // only one copy of faker required but if in-compatible version then warning will be thrown
+            //     }
+            // }
+            shared:['faker']
         }),
         new HtmlWebpackPlugin({
             template:'./public/index.html' // render output of webpack to browser

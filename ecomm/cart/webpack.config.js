@@ -12,7 +12,13 @@ module.exports={
             filename:'remoteEntry.js',
             exposes:{
                 './CartShow':'./src/index.js'
-            }
+            },
+            // shared:{
+            //     faker:{
+            //         singleton:true // only one copy of faker required but if in-compatible version then warning will be thrown
+            //     }
+            // }
+            shared:['faker']
         }),
         new HTMLWebpackPlugin({
             template:'./public/index.html'
