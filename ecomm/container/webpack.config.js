@@ -14,7 +14,8 @@ module.exports={
             name:'container',
             remotes:{
                 // keys will be match with import statements to fetch data from URL
-                productsApp:'products@http://localhost:8081/remoteEntry.js'
+                productsApp:'products@http://localhost:8081/remoteEntry.js',
+                cartApp:'cart@http://localhost:8082/remoteEntry.js'
             }
         }),
         new HtmlWebpackPlugin({
