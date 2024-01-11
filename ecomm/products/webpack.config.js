@@ -15,7 +15,7 @@ module.exports={
             filename:'remoteEntry.js',
             // expose defines which files or modules to be exposes to other projects
             exposes:{
-                './ProductsIndex':'./src/index'
+                './ProductsIndex':'./src/bootstrap'
             },
             // shared:{
             //     faker:{
