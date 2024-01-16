@@ -6,8 +6,10 @@ module.exports={
                 exclude:/node_modules/, // exclude node_modules dir
                 use:{
                     loader:'babel-loader', // use babel as loader
-                    options:['@babel/preset-react','@babe;/preset-env'],
-                    plugins:['@babel/plugin-transform-runtime']
+                    options:{
+                        presets:['@babel/preset-react','@babel/preset-env'],
+                        plugins:['@babel/plugin-transform-runtime']
+                    }
                 }
             }
         ]
