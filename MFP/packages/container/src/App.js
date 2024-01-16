@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Marketing from './components/Marketing'
 const App = () => {
   return (
-    <h1>from Container</h1>
+    <div>
+      <h1>Container</h1>
+      <hr/>
+      <Marketing/>
+    </div>
   )
 }
 
